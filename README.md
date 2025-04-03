@@ -111,3 +111,11 @@ dotnet test
   "email": "bruno@mail.com"
 }
 ```
+
+---
+
+## 🙌 Autor
+
+**Bruno Vieira**  
+💻 Full Stack .NET + React  
+🔗 [linkedin.com/in/brunojpv](https://www.linkedin.com/in/brunojpv)
