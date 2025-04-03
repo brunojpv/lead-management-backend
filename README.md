@@ -40,25 +40,25 @@ git clone https://github.com/seu-usuario/lead-management.git
 cd LeadManagement
 ```
 
-## ▶️ 2. Restaurar pacotes
+### ▶️ 2. Restaurar pacotes
 
 ```
 dotnet restore
 ```
 
-## ▶️ 3. Rodar o banco com Docker
+### ▶️ 3. Rodar o banco com Docker
 
 ```
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Bjpv@1982" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
-## ▶️ 4. Rodar as migrations
+### ▶️ 4. Rodar as migrations
 
 ```
 dotnet ef database update --project LeadManagement.Infrastructure --startup-project LeadManagement.Api
 ```
 
-## ▶️ 5. Executar a API
+### ▶️ 5. Executar a API
 
 ```
 dotnet run --project LeadManagement.Api
@@ -69,7 +69,7 @@ Acesse:
 
 ## ✅ Testes
 
-Execute os testes com:
+### Execute os testes com:
 
 ```
 dotnet test
