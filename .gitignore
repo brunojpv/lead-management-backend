@@ -1,0 +1,18 @@
+# Back-End (.NET)
+bin/
+obj/
+.vscode/
+.env
+.vs
+*.user
+*.suo
+
+# Front-End (Node)
+node_modules/
+dist/
+.env
+.npmrc
+
+# Others
+*.log
+.DS_Store
