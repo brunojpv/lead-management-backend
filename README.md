@@ -21,13 +21,14 @@ API para gerenciamento de leads, construída com ASP.NET Core 6, arquitetura DDD
 
 ## 📁 Estrutura de pastas
 
+```
 LeadManagement
 ├── LeadManagement.Api # Camada de apresentação (Web API)
 ├── LeadManagement.Application # Casos de uso, comandos e handlers
 ├── LeadManagement.Domain # Entidades, enums, interfaces (DDD)
 ├── LeadManagement.Infrastructure # Repositórios, DbContext e EF
 ├── LeadManagement.Tests # Testes unitários e de integração
-
+```
 
 ---
 
@@ -64,7 +65,8 @@ dotnet ef database update --project LeadManagement.Infrastructure --startup-proj
 dotnet run --project LeadManagement.Api
 ```
 
-Acesse:
+### Acesse:
+
 📎 http://localhost:5000/swagger
 
 ---
@@ -85,17 +87,19 @@ dotnet test
 
 ## 📦 Endpoints principais
 
-Método    Rota	                    Descrição
-GET       /api/leads                Listar leads com filtros
-GET	      /api/leads/{id}           Buscar por ID
-POST      /api/leads                Criar novo lead
-POST      /api/leads/accept/{id}    Aceitar lead
-POST      /api/leads/decline/{id}   Recusar lead
+| Método | Rota	                   | Descrição                |
+|--------|-------------------------|--------------------------|
+| GET    | /api/leads              | Listar leads com filtros |
+| GET	   | /api/leads/{id}         | Buscar por ID            |
+| POST   | /api/leads              | Criar novo lead          |
+| POST   | /api/leads/accept/{id}  | Aceitar lead             |
+| POST   | /api/leads/decline/{id} | Recusar lead             |
 
 ---
 
 ## 🧪 Exemplo de body (POST /api/leads)
 
+```
 {
   "firstName": "Bruno",
   "lastName": "Vieira",
@@ -106,3 +110,4 @@ POST      /api/leads/decline/{id}   Recusar lead
   "phone": "11999999999",
   "email": "bruno@mail.com"
 }
+```
