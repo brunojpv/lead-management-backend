@@ -67,6 +67,8 @@ dotnet run --project LeadManagement.Api
 Acesse:
 📎 http://localhost:5000/swagger
 
+---
+
 ## ✅ Testes
 
 ### Execute os testes com:
@@ -79,6 +81,8 @@ dotnet test
 - ✅ Testes de integração com banco InMemory
 - ✅ Testes simulando o fluxo completo
 
+---
+
 ## 📦 Endpoints principais
 
 Método    Rota	                    Descrição
@@ -87,6 +91,8 @@ GET	      /api/leads/{id}           Buscar por ID
 POST      /api/leads                Criar novo lead
 POST      /api/leads/accept/{id}    Aceitar lead
 POST      /api/leads/decline/{id}   Recusar lead
+
+---
 
 ## 🧪 Exemplo de body (POST /api/leads)
 
@@ -100,12 +106,3 @@ POST      /api/leads/decline/{id}   Recusar lead
   "phone": "11999999999",
   "email": "bruno@mail.com"
 }
-
-
-
-
-
-
-
-
-
